@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,900&family=Noto+Serif+SC:wght@900&family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+      
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de cafe</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+           <h3>Nuestro Blog</h3>
+           <article class="entrada">
+             <div class="entrada__imagen">
+              <img src="img/blog1.jpg" alt="imagen blog"loading="lazy"><!--loading lazy ayuda con la velocidad de carga, al cargar a medida que vamos avanzando en la pagina-->
+
+    </div>
+    <div class="entrada__contenido">
+       <h4 class="no-margin">Tipos de grano de Cafe</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, minus placeat deserunt eos unde possimus quo eaque, nemo quas incidunt at ex. Doloribus eaque mollitia facere doloremque eligendi, excepturi distinctio.</p>
+    
+       <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+    </div>
+           </article>
+
+           <article class="entrada">
+            <div class="entrada__imagen">
+             <img  src="img/blog2.jpg" alt="imagen blog" loading="lazy">
+
+   </div>
+   <div class="entrada__contenido">
+      <h4 class="no-margin">3 deliciosas recetas de Cafe</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, minus placeat deserunt eos unde possimus quo eaque, nemo quas incidunt at ex. Doloribus eaque mollitia facere doloremque eligendi, excepturi distinctio.</p>
+   
+      <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+   </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__imagen">
+             <img src="img/blog3.jpg" alt="imagen blog"loading="lazy">
+
+   </div>
+   <div class="entrada__contenido">
+      <h4 class="no-margin">Beneficios del Cafe</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, minus placeat deserunt eos unde possimus quo eaque, nemo quas incidunt at ex. Doloribus eaque mollitia facere doloremque eligendi, excepturi distinctio.</p>
+   
+      <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+   </div>
+          </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros cursos y talleres</h3>
+          
+            <ul class="cursos no-padding ">
+            <li class="widget-curso">
+            <h4 class="margin">Tecnicas de extracion de Cafe</h4>
+            <p class="widget-curso__label">Precio
+            <span class="widget-curso__info">Gratis</span> 
+        </p>
+        <p class="widget-curso__label">Cupo:
+            <span class="widget-curso__info">20</span>
+        </p>
+        <a href="entrada.html" class="boton boton--secundario">Mas informacion</a>
+    </li>
+        
+
+        </ul>
+
+        <ul class="cursos no-padding">
+            <li class="widget-curso">
+            <h4 class="no-margin">4 recetas para principiantes</h4>
+            <p class="widget-curso__label">Precio
+            <span class="widget-curso__info">Gratis</span> 
+        </p>
+        <p class="widget-curso__label">Cupo:
+            <span class="widget-curso__info">20</span>
+
+        </p>
+        <a href="entrada.html" class="boton boton--secundario">Mas informacion</a>
+    </li>
+        </ul>
+        </aside>
+    </div>
+     <footer class="footer"> <!--en el foteer reutilizamos codigo de header-->
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h3 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h3>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+       
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDUwjgr9G8550gTI-zFHHJ2NTNrfRPpPl0",
+          authDomain: "projectofree.firebaseapp.com",
+          databaseURL: "https://projectofree-default-rtdb.firebaseio.com",
+          projectId: "projectofree",
+          storageBucket: "projectofree.appspot.com",
+          messagingSenderId: "63130419546",
+          appId: "1:63130419546:web:ed5eda2d6f2e9a58007363",
+          measurementId: "G-3DLDB6476B"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

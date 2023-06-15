@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,900&family=Noto+Serif+SC:wght@900&family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+      
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de cafe</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+        <main class="contenedor">
+           <h3 class="blog-h3">Nuestro Blog</h3>
+        
+             <img src="img/blog1.jpg" alt="imagen blog">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iusto fugit. Reiciendis doloremque magnam minima nemo incidunt, autem ipsa aperiam error eaque recusandae atque quisquam minus, dignissimos ipsum iure eveniet.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minus, ullam voluptatem labore doloremque quae expedita, iste aliquid maiores voluptas facilis, quos accusantium! Nam odit dolorum dolor, laborum aperiam itaque.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio non officiis earum cum itaque vitae ex maxime. Eaque numquam quam aut explicabo mollitia animi laboriosam? Facere esse incidunt quisquam quas!</p>
+</main>
+        
+     <footer class="footer"> <!--en el foteer reutilizamos codigo de header-->
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h3 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h3>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+       
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDUwjgr9G8550gTI-zFHHJ2NTNrfRPpPl0",
+          authDomain: "projectofree.firebaseapp.com",
+          databaseURL: "https://projectofree-default-rtdb.firebaseio.com",
+          projectId: "projectofree",
+          storageBucket: "projectofree.appspot.com",
+          messagingSenderId: "63130419546",
+          appId: "1:63130419546:web:ed5eda2d6f2e9a58007363",
+          measurementId: "G-3DLDB6476B"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
